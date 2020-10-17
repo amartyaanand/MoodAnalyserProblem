@@ -2,13 +2,13 @@
 
 namespace MoodAnalyser
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             try
             {
-                string mood = Console.ReadLine();
+                string mood = string.Empty;
                 MoodAnalyserClass moodAnalyser = new MoodAnalyserClass(mood);
                 string result = moodAnalyser.AnalyseMood();
                 Console.WriteLine(result);
